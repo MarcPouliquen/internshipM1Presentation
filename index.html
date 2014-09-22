@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<title>Internship At LaTIM - summer 2014</title>
+
+		<meta name="description" content="Présentation of internship at LaTIM">
+		<meta name="author" content="Marc Pouliquen">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-id="0b10953fcb4fdc3cb4e0092b9f26e1dc" class="stack">
+					<section data-id="84fba992e0f60bdd63d54d06eecf2b14" class="">
+						<h2>
+			<img style="width: 64.4724px; height: 89px; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/marcpouliquen/images/650640/latim_logo.jpg">
+			<img style="width: 231px; height: 79.2839px; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/marcpouliquen/images/650649/INSERM-mpi.jpg">
+			<img style="width: 133px; height: 80.3955px; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/marcpouliquen/images/650661/logo_ubo_2012_hor.jpg">
+			<img style="width: 157px; height: 80px; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/marcpouliquen/images/651121/chu.jpeg">
+			<img style="width: 220px; height: 71.7895px; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/marcpouliquen/images/650669/isen-groupe.jpg">
+			</h2>
+			<h2>
+			<b>Soutenance de stage M1</b>
+			</h2>
+			<blockquote>
+			"Intégration d'un code de calcul de dosimétrie sur GPU pour la curiethérapie prostate dans la plateforme CamiTK"</blockquote>réalisé du 16/06/2014 au 26/09/2014<br>au<br>LaTIM - CHRU Brest<br>par <br>Marc Pouliquen<br>
+			</section>
+						<section data-id="203f99c7aab35e3d8e88513f29e0add4" class="">
+							<h2>SOmmaire</h2>
+			<p>
+							<br>
+						</p>
+			<p>
+						<br>
+					</p>
+					<ol>
+						<li>Présentation du Laboratoire</li>
+						<li data-fragment-index="0" class="fragment">Objectifs techniques du Stage</li>
+						<li data-fragment-index="1" class="fragment">Outils utilisés pour le développement</li>
+						<li data-fragment-index="2" class="fragment">Prise en main de CamiTK </li>
+						<li data-fragment-index="3" class="fragment">Simulation Monte-Carlo sur GPU</li>
+						<li data-fragment-index="4" class="fragment">Mise en forme des résultats de la simulation</li>
+						<li data-fragment-index="5" class="fragment">Traitement d'image</li>
+					</ol>
+				</section>
+			</section>
+			<section data-id="928ca12238c689d3f7149b17e8002d11" class="">
+				<h2>1 - Présentation du Laboratoire</h2>
+			<p>
+				<br>
+			</p>
+			<p>
+			<br>
+			</p>
+			<p>Regroupement de :</p>
+			<ul>
+			<li>
+			<b>
+			<u>UBO</u>
+			</b>
+			</li>
+			<li>
+			<b>
+			<u>CHU Brest</u>
+			</b>
+			</li>
+			<li>
+			<b>
+			<u>Télécom Bretagne</u>
+			</b>
+			</li>
+			</ul>
+			<p>
+			<br>
+			</p>
+			<p>
+			<br>
+			</p>
+			</section>
+			<section data-id="3eb32b59d66b56718c847ad32bf33ba9" class="stack">
+				<section data-id="1412358a9d79a7a73e4aa2ab2dc84cd2" class="">
+					<h2>2 - Objectifs techniques du Stage</h2>
+			<p>
+					<br>
+				</p>
+			<p>
+				<br>
+			</p>
+			<p>
+			<br>
+			</p>
+			<p>Développement d'une interface graphique pour un code de calcul sur GPU sur la plateforme CamiTK<br>
+			</p>
+			</section>
+			<section data-id="532c301e6e9f6886ff23398f4c8b4b11" class="">
+				<h2>Points à développer</h2>
+			<p>
+				<br>
+			</p>
+			<p>
+			<br>
+			</p>
+			<p>Interface pour rentrer les paramètres de simulation <br>Exécution de la simulation<br>Analyse&nbsp; et affichage des résultats<br>Affichage des résultats dans une image 3D<br>
+			</p>
+			</section>
+			</section>
+			<section data-id="99aebe865edcb231445977ba4d48fbb0" class="stack">
+				<section data-id="d6aad019fc5081543c3eb9752b93af81" class="">
+					<h2>3 - Outils utilisés pour le <br>
+			</h2>
+			<h2>développement</h2>
+			<p>
+					<u>
+					<br>
+				</u>
+			</p>
+			<h3>
+			<u>&nbsp;Bibliotheques</u>
+			</h3>
+			<p>CamiTK<br>VTK<br>Qt<br>QWT<br>CUDA<br>BOOST<br>
+			</p>
+			<p>
+			<br>
+			</p>
+			</section>
+			<section data-id="6ea27c1b9157ad0f0b648de19cfda3c6" class="">
+				<h2>Autres outils</h2>
+			<p>
+				<br>
+			</p>
+			<p>
+			<br>
+			</p>
+			<p>CMake (compilation)<br>Mercurial (gestion de version)<br>Doxygen (documentation du code)<br>
+			</p>
+			</section>
+			</section>
+			<section data-id="079cb1adeb8bf8ba8993ce173fe90489" class="stack">
+				<section data-id="f52594ea6b3041f84d9dd47a12abc909" class="">
+					<h2>4 - Prise en main de CamiTK<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/marcpouliquen/images/650055/screen-results.png">
+			</h2>
+				</section>
+				<section data-id="15617bfe3f643f4073d55fafefcea6f3" class="">
+					<h2>Fonctionnement par actions</h2>
+			<p>
+					<br>
+				</p>
+			<p>
+				<br>
+			</p>
+			<p>Développement de bibliothéques externes, appelées par l'application principale lorsque l'utilisateur choisit d'exécuter une action<br>
+			</p>
+			<p>
+			<br>
+			</p>
+			</section>
+			<section data-id="784a9cc227b51dac98da4cf7dea01fa1" class="">
+				<h2>Développement d'une application</h2>
+			<p>
+				<br>
+			</p>
+			<p>
+			<br>
+			</p>
+			<p>Création complète d'une interface graphique en utilisant les classes de CamiTK disponibles :</p>
+			<ul>
+			<li>explorateur de fichiers</li>
+			<li>visualisation d'images</li>
+			<li>menus</li>
+			</ul>
+			</section>
+			</section>
+			<section data-id="f9ffa63be2d8ad059c4543d494502769" class="stack">
+				<section data-id="f67efebb4de20360a33cc9f23a23a141" class="">
+					<h2>5 - Simulation Monte-Carlo sur GPU</h2>
+			<p>
+					<br>
+				</p>
+			<p>Simulation Monte-Carlo : ensemble des méthodes visant é calculer une valeur numérique à partir de techniques probabilistes.&nbsp;</p>
+			<p>
+				<br>
+			</p>
+			<p>Inconvénient : temps de calcul (long)&nbsp;</p>
+			<p>
+			<br>
+			</p>
+			<p>Méthode du laboratoire : utilisation des processeurs graphiques pour paralléliser et gagner du temps<br>
+			</p>
+			</section>
+			<section data-id="b236c06c18d59d3b662610d36dc5ec00" class="">
+			<h2>Liaison interface-Simulation</h2>
+			<p>Exécution de la simulation depuis l'interface</p>
+			<pre><code> mpirun -np 1 brachy_ldr a.arg</code></pre>Arguments passés par le fichier a.arg : <br>
+			<br>
+			<ul>
+			<li>Nom du patient</li>
+			<li>Chemin d'écriture des résultats</li>
+			<li>Nom du fichier de position des sources radioactives&nbsp;</li>
+			<li>Identifiants des GPU pour la simulation<br>
+			</li>
+			<li>Activité des sources radioactives<br>
+			</li>
+			</ul>
+			</section>
+			<section data-id="4f62855a6f36a0f859bbf281c8fd71a1" class="">
+				<h2>Arborescence des résultats de simulation</h2>
+			<img style="width: 232.526px; height: 475px; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/marcpouliquen/images/650320/arborescence.png">
+			</section>
+			</section>
+			<section data-id="7fe277b654e902f6d61a4cf371d69f8f" class="stack">
+				<section data-id="4b3eb41783fff012fe7dad8e2c716880" class="">
+					<h2>6 - Mise en forme des résultats de la simulation</h2>
+			<p>
+					<br>
+				</p>
+			<p>Méthode d'extraction de la dosimétrie voxel par voxel :</p>
+			<p>
+				<br>
+			</p>
+			<ol>
+			<li>Lecture du fichier "masque" (position des organes)</li>
+			<li>Si présence d'un organe, lecture du même voxel sur les fichiers doses et incertitudes<br>
+			</li>
+			<li>Enregistrement des valeurs obtenues dans des tableaux</li>
+			<li>Tri des tableaux par doses croissantes</li>
+			</ol>
+			<pre><code> std::sort()</code></pre>
+			<br>
+			</section>
+			<section data-id="c4310fe13955b33274b2a37c1c1f0895" class="">
+				<h2>Affichage des graphiques</h2>
+			<p>
+				<br>
+			</p>
+			<p>Avec QWT : plugin Qt pour la création de graphiques</p>
+			<p>
+			<br>
+			</p>
+			<p>DVH différentielle : pourcentage du volume de l'organe ayant reçu au minimum telle dose.</p>
+			<p>
+			<br>
+			</p>
+			<p>DVH cumulée : combien de voxels ont reçu exactement quelle dose<br>
+			</p>
+			<p>
+			<br>
+			</p>
+			</section>
+			<section data-id="2fce91f2ed5497b30e3a7ea7a2227f5f" class="">
+				<h2>DVH<br>
+			</h2>
+			<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/marcpouliquen/images/650337/screen2DVH.png">
+			</section>
+			<section data-id="945abd8ad20d854b28d6d7d647dbe89e" class="">
+				<h2>Affichage du Tableau</h2>
+			<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/marcpouliquen/images/650348/screenshotTableau.png">
+			</section>
+			</section>
+			<section data-id="ac7399f3e7da7ade006bf8e3d061d84f" class="stack">
+				<section data-id="3f255d07963f2a4d315391658d2e4f02" class="">
+					<h2>7 - Traitement d'image</h2>
+			<p>
+					<br>
+				</p>
+			<p>Création d'une image de doses colorée à partir du fichier de doses de la simulation<br>
+			</p>
+			<p>
+			<br>
+			</p>
+			<p>Utilisation de l'échelle des teintes (espace colorimétrique HSV)</p>
+			<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/marcpouliquen/images/650364/teintes.png">
+			<br>
+			<br>échelle allant de 0Gy à 80Gy<br>
+			</section>
+			<section data-id="4ab7411016dc96ff786f1303bf38ced7" class="">
+				<h2>Résultat</h2>
+			<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/marcpouliquen/images/650375/dose_couleur.png">
+				<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/marcpouliquen/images/650376/dose_gris.png">
+				<br>Temps de calcul : entre 53 et 55 secondes pour une image 512*512*170<br>
+			</section>
+			<section data-id="652492ebc31f7fc7c59f76ee9ea60074" class="">
+				<h2>Fusion de l'image créée avec le scanner du patient</h2>
+			<p>
+				<br>
+			</p>
+			<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/marcpouliquen/images/650388/scanner.png">
+			<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/marcpouliquen/images/650391/mix.png">
+			<br>
+			<br>
+			</section>
+			<section data-id="cbfb9e80d887b4b59bff0081b81ed299" class="">
+				<h2>Changement d'opacité pour la fusion</h2>
+			<p>
+				<br>
+			</p>
+			<p>Autre fonctionnalité : sélection de l'opacité pour accentuer soit le scanner, soit les doses.</p>
+			<p>
+			<br>
+			</p>
+			<p>Par pas de 0.05 sur une échelle allant de 0 à 1</p>
+			<p>
+			<br>
+			</p>
+			<p>Affichage en temps réel selon la sélection de l'utilisateur</p>
+			<p>
+			<br>
+			</p>
+			</section>
+			</section>
+			<section data-id="e7dbf52706f321c5810f17373bf9b370" class="">
+				<h2>Conclusion</h2>
+			<p>
+				<br>
+			</p>
+						<p>Les fonctionnalités demandées ont été développées</p>
+						<p>
+						<br>
+						</p>
+						<p>Nouvelles connaissances acquises (nouvelles bibliothèques)</p>
+						<p>
+						<br>
+						</p>
+						<p>Intérêt pour la recherche<br>
+						</p>
+						<p>
+							<br>
+						</p>
+					</section>
+				</div>
+			</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
